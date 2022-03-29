@@ -21,14 +21,14 @@ public class TestBase {
 
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://github.com";
-//        Configuration.browser = System.getProperty("browser");
-//        Configuration.browserVersion = System.getProperty("browserVersion");
-//        Configuration.remote = cfg.hostname();
-//
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability("enableVNC", true);
-//        capabilities.setCapability("enableVideo", true);
-//        Configuration.browserCapabilities = capabilities;
+        Configuration.browser = System.getProperty("browser");
+        Configuration.browserVersion = System.getProperty("browserVersion");
+        Configuration.remote = cfg.hostname();
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
+        Configuration.browserCapabilities = capabilities;
     }
 
     @AfterEach
